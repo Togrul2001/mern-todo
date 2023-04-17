@@ -1,0 +1,25 @@
+GET http://localhost:3001/todos
+
+###
+
+POST http://localhost:3001/todos/new
+Content-Type: application/json
+
+{
+    "title":"Typescript oyrenmek"
+}
+
+###
+
+DELETE http://localhost:3001/todos/delete/643d3bb57bd23de0e29f4fc3
+
+
+###
+
+PUT  http://localhost:3001/todos/edit/643d3d2818caf170456edb5d
+Content-Type: application/json
+
+{
+    "title":"React oyrenmek yeniden update olundu 2"
+    
+}
