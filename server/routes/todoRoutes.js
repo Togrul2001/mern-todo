@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.route("/todos").get(getTodos)
 router.route("/todos/new").post(setTodo)
-router.route("/todos/edit/:id").get(updateTodo)
-router.route("/todos/delete/:id").get(deleteTodo)
+router.route("/todos/edit/:id").put(updateTodo)
+router.route("/todos/delete/:id").delete(deleteTodo)
 
 module.exports = router
